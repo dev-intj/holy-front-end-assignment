@@ -1,8 +1,19 @@
-body{
-  background-color: #2E3233;
+body {
+  background-color: #2e3233;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow-y: scroll;
 }
 
-/*
-gray : #DAE6E6
-yellow : #EEFF33
-*/
+main {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  margin: 8px;
+}
