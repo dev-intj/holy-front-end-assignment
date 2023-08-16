@@ -11,9 +11,9 @@ const DiscoverButtonSection = () => {
         opportunities
       </h1>
       <div>
-        <DiscoverButton label="TALENTS" />
-        <DiscoverButton label="ENTERPRENEURS" />
-        <DiscoverButton label="INVESTORS" />
+        <DiscoverButton label="TALENTS" href="/" />
+        <DiscoverButton label="ENTERPRENEURS" href="/" />
+        <DiscoverButton label="INVESTORS" href="/" />
       </div>
     </div>
   );

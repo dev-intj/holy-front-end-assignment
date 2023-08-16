@@ -6,17 +6,9 @@ import styles from "./heroImg.module.css";
 
 import ArrowPointingAtCursor from "../utils/arrowPointingAtCursor";
 
-const HeroImage = ({ src }) => {
+const HeroImage = ({ src, href }) => {
   return (
-    <div
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        borderRadius: "50%",
-        height: "445px",
-        width: "445px",
-      }}
-    >
+    <div className={styles.magneticWrapper}>
       <MagneticPull
         className="magneticpull"
         scale={2}

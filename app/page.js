@@ -14,6 +14,7 @@ export default function Home() {
       <Navbar />
       <main className={styles.main}>
         <SectionOne />
+        <div className="breakingSections"></div>
         <DiscoverButtonSection />
       </main>
     </>

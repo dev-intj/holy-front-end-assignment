@@ -3,8 +3,23 @@
   pointer-events: none;
 }
 
+.magneticWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 445px;
+  width: 445px;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
 @media only screen and (max-width: 768px) {
   .heroImg {
+    display: none;
+  }
+
+  .magneticWrapper {
     display: none;
   }
 }

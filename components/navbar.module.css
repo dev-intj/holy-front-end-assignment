@@ -7,6 +7,11 @@
   margin-left: auto;
 }
 
+.links a {
+  text-decoration: none;
+  color: #f6fbfb;
+}
+
 .navigation {
   display: flex;
   height: 74px;
@@ -67,17 +72,24 @@
 .mobileLinks {
   display: none;
   color: #f6fbfb;
+  background-color: #2e3233;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  align-items: center;
   padding: 0 2rem 0.5rem 2rem;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobileLinks a {
+  text-decoration: none;
+  color: #f6fbfb;
 }
 
 @media only screen and (max-width: 600px) {
   .mobileLinks {
-    display: block;
-    width: 100%;
+    display: flex;
   }
 
   .extraLinks {

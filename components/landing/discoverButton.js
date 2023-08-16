@@ -1,9 +1,10 @@
 import styles from "./discoverbuttonsection.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
-const DiscoverButton = ({ label, link, href }) => {
+const DiscoverButton = ({ label, href }) => {
   return (
-    <div className={styles.discoverButtonSection}>
+    <Link className={styles.discoverButtonSection} href={href}>
       <span className={styles.label}>{label}</span>
       <div className={styles.discoverButtonArrow}>
         <Image
@@ -14,7 +15,7 @@ const DiscoverButton = ({ label, link, href }) => {
           priority
         />
       </div>
-    </div>
+    </Link>
   );
 };
 

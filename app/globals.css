@@ -2,6 +2,7 @@ body {
   background-color: #2e3233;
   font-family: Helvetica, Arial, sans-serif;
   overflow-y: scroll;
+  overflow-x: hidden;
   width: 100vw;
   margin: 0;
 }
@@ -70,7 +71,7 @@ body {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  background-color: yellow;
+  background-color: #eeff33;
 }
 
 .magneticpull .align {
@@ -78,4 +79,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.breakingSections {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .breakingSections {
+    display: block;
+    border-top: solid 0.1rem #f6fbfb;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
