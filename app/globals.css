@@ -2,6 +2,8 @@ body {
   background-color: #2e3233;
   font-family: Helvetica, Arial, sans-serif;
   overflow-y: scroll;
+  width: 100vw;
+  margin: 0;
 }
 
 main {
@@ -12,8 +14,68 @@ main {
 }
 
 nav {
-  display: flex;
+  overflow: hidden;
   position: fixed;
+  top: 0;
   width: 100%;
-  margin: 8px;
+}
+
+/* CHANGING CURSOR  */
+body {
+  cursor: url("../public/assets/img/cursor1.svg"), auto;
+}
+
+.magnetic-pull {
+  cursor: url("../public/assets/img/cursor3.svg"), auto;
+}
+
+/* MAGNETING PULL */
+
+.magnetic-pull {
+  border: none;
+  padding: 0;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  touch-action: none;
+}
+
+.magnetic-pull span {
+  display: inline-block;
+}
+
+.magnetic-pull--hover {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.magneticpull {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.magneticpull .arrowcircle {
+  display: none;
+}
+
+.magneticpull:hover .arrowcircle {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.magneticpull .align {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

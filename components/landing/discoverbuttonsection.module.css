@@ -29,6 +29,7 @@
 .discoverButtonSection:hover {
   border-top: 0.2rem solid #eeff33;
   color: black;
+  cursor: url("../../public/assets/img/cursor2.svg"), auto;
 }
 
 .discoverButtonSection:hover .label {

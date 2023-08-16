@@ -1,30 +1,4 @@
-.links {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-left: auto;
-}
-
-.navigation {
-  display: flex;
-  width: 100%;
-  height: 74px;
-  color: #f6fbfb;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.extraLinks {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-left: auto;
-  padding-left: 4rem;
-}
+/* SECTION ONE */
 
 .header {
   font-size: 96px;
@@ -42,18 +16,12 @@
   line-height: 26px;
 }
 
-.heroImg {
-  border-radius: 50%;
-}
-
 .sectionTwo {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   flex-direction: column;
 }
-
-/* SECTION ONE */
 
 .sectionOne {
   display: flex;
@@ -67,7 +35,7 @@
 }
 
 .sectionMiddleButton {
-  max-width: 218px;
+  width: fit-content;
   background-color: #eeff33;
   padding: 8px 24px 8px 24px;
   border-radius: 37px;
@@ -75,6 +43,20 @@
   line-height: 26px;
   font-weight: 400;
   line-height: 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
 /* END OF SECTION ONE */
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+}

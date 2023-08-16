@@ -6,6 +6,8 @@ import Navbar from "@/components/navbar";
 import DiscoverButtonSection from "@/components/landing/discoverButtonsSection";
 import SectionOne from "@/components/landing/sectionOne";
 
+import ArrowPointingAtCursor from "@/components/utils/arrowPointingAtCursor";
+
 export default function Home() {
   return (
     <>
