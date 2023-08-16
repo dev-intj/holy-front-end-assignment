@@ -14,19 +14,14 @@ const HeroImage = ({ src, href }) => {
         scale={2}
         tollerance={0.8}
         speed={0.3}
+        debug={false}
+        borderRadius={0}
         onClick={() => {
-          console.log("click");
+          console.log("click, go to", href);
+          window.open(href, "_self");
         }}
       >
-        <div
-          style={{
-            width: "400px",
-            height: "400px",
-            position: "absolute",
-            top: "-300px",
-            left: "-200px",
-          }}
-        >
+        <div className={styles.pointingArrowBG}>
           <ArrowPointingAtCursor />
         </div>
       </MagneticPull>
@@ -34,9 +29,8 @@ const HeroImage = ({ src, href }) => {
         src={src}
         alt="Vercel Logo"
         className={styles.heroImg}
-        width={445}
-        height={445}
         priority
+        layout="fill"
       />
     </div>
   );
