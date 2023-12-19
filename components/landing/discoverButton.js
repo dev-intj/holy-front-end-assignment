@@ -8,7 +8,7 @@ const DiscoverButton = ({ label, href }) => {
       <span className={styles.label}>{label}</span>
       <div className={styles.discoverButtonArrow}>
         <Image
-          src="/assets/img/arrowrighttop.svg"
+          src="./assets/img/arrowrighttop.svg"
           alt="Vercel Logo"
           width={16}
           height={16}
